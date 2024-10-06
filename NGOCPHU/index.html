@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CPM COFFEE</title>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<style type="text/css">
+.form-group label {
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+}
+</style>
+</head>
+<center>
+<body background="IMAGES/coffeetile.jpg" text="#F6F6F6" onLoad="MM_preloadImages('IMAGES/home_on.png','IMAGES/about_on.png','IMAGES/desserts_on.png','IMAGES/contact_on.png','IMAGES/coffee_on.png')">
+<span style="text-align: justify"></span>
+<table width="1220" border="1">
+<tbody>
+  <tr>
+    <td width="1210" colspan="7"><table width="1200" border="1">
+      <tbody>
+        <tr>
+          <td colspan="7"><img src="IMAGES/header.jpg" width="1202" height="100" alt=""/></td>
+        </tr>
+        <tr>
+          <td width="196">&nbsp;</td>
+          <td width="169"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','IMAGES/home_on.png',1)"><img src="IMAGES/home_off.png" alt="" width="116" height="50" id="Image8"></a></td>
+          <td width="149"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','IMAGES/about_on.png',1)"><img src="IMAGES/about_off.png" alt="" width="127" height="50" id="Image9"></a></td>
+          <td width="184"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','IMAGES/coffee_on.png',1)"><img src="IMAGES/coffee_off.png" alt="" width="134" height="50" id="Image12"></a></td>
+          <td width="178"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','IMAGES/desserts_on.png',1)"><img src="IMAGES/desserts_off.png" alt="" width="158" height="50" id="Image10"></a></td>
+          <td width="149"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','IMAGES/contact_on.png',1)"><img src="IMAGES/contact_off.png" alt="" width="146" height="50" id="Image11"></a></td>
+          <td width="129">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="7"><img src="IMAGES/HERO.png" width="1200" height="400" alt=""/></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+</tbody>
+</table>
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Thông tin khách hàng - Cửa hàng Cafe</title>
+    <div class="container">
+      <h1>Form Thông tin khách hàng</h1>
+        <form action="submit-form.php" method="POST">
+            <div class="form-group">
+              <label for="fullname">Họ và tên:&nbsp; &nbsp; &nbsp;</label>
+              <input type="text" id="fullname" name="fullname" required placeholder="Nhập họ và tên">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input type="email" id="email" name="email" required placeholder="Nhập email">
+          </div>
+            <div class="form-group">
+                <label for="phone">Số Đt&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại">
+          </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+              <input type="text" id="address" name="address" required placeholder="Nhập địa chỉ">
+            </div>
+            <div class="form-group">
+                <label for="note">Ghi chú:&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label>
+                <textarea name="note" placeholder="Ghi chú thêm..."></textarea>
+            </div>
+            <button type="submit" class="button">
+            <p><span style="text-align: justify"><strong style="color: #000000; font-size: 9px;"></strong></span><strong style="color: #000000; font-size: 9px;">Gửi thông tin</strong></p>
+            </button>
+        </form>
+  </div>
+<h2>CPM COFFEE</h2>
+<table width="1124" border="1">
+	
+  <tbody>
+    <tr>
+      <td width="248"><img src="IMAGES/coffebeans.png" width="200" height="200" alt=""/>&nbsp;</td>
+      <td width="303"><h3><strong>Cà phê chè</strong></h3>
+      <p> Là tên gọi theo tiếng Việt của loài cà phê Arabica có tên khoa học là: <em><strong>Coffea arabica</strong></em>, do loài cà phê này có lá nhỏ, cây có một số đặc điểm hình thái giống như cây chè - một loài cây công nghiệp phổ biến ở Việt Nam.</p></td>
+      <td width="249"><img src="IMAGES/cake.png" width="200" height="200" alt=""/></td>
+      <td width="296" style="color: #D3CDCD"><h3>Tiramisu coffee</h3>
+      <p>Một món tráng miệng mascarpone pha espresso kiểu Ý nhiều lớp, dạng bánh. Hãy thỏa mãn cơn thèm caffeine của bạn, cùng với một chút rượu!</p></td>
+    </tr>
+    <tr>
+      <td><img src="IMAGES/latte.png" width="200" height="200" alt=""/></td>
+      <td><h3>Cappuccino</h3>
+      <p> Là tên gọi một loại café của Ý, được tạo nên từ 3 phần đều nhau: Café Espresso pha với lượng nước gấp đôi thông thường (espresso lungo), sữa nóng và sữa sủi bọt. Để hoàn thiện khẩu vị, người ta thường rải lên trên tách cà phê Cappuccino là bột ca cao hay bột quế. </p></td>
+      <td><img src="IMAGES/events.png" width="200" height="200" alt=""/></td>
+      <td><h3>Lễ hội cà phê Buôn Mê Thuột</h3>
+        <p>Lễ hội cà phê Buôn Ma Thuột có rất nhiều hoạt động khác nhau như <strong>lễ khai mạc, các hoạt động triển lãm, hội thảo, các hoạt động quảng bá, tôn vinh, hành trình du lịch, lễ bế mạc</strong>.</p>
+      <p>&nbsp;</p></td>
+    </tr>
+  </tbody>
+</table>
+<img src="IMAGES/footer.png" alt="" width="1125" height="157" usemap="#Map"/>
+<map name="Map">
+  <area shape="circle" coords="407,80,17" href="https://www.instagram.com/" target="_blank">
+  <area shape="circle" coords="464,76,22" href="https://www.facebook.com/" target="_blank">
+  <area shape="circle" coords="719,79,25" href="https://www.youtube.com/" target="_blank">
+  <area shape="circle" coords="665,76,27" href="https://x.com/" target="_blank">
+  <area shape="circle" coords="666,84,6" href="#">
+  <area shape="circle" coords="667,73,19" href="https://x.com/" target="_blank">
+</map>
+<center>
+
+</html>
