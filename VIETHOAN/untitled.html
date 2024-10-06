@@ -5,60 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viet Hoan Sport</title>
     <style>
-        a {
-            color:#1d3557 ;
-        }
-        h1 { 
-            font-size: larger;
-            color: #1d3557;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f1faee;
-        }
-        .team-section {
-            text-align: center;
-            padding: 50px 0;
-        }
-        .team-section h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #e63946;
-        }
-        .team-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            justify-items: center;
-            padding: 0 20px;
-        }
-        .team-member {
-            background-color: #a8dadc;
-            border-radius: 18px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 100%;
-            max-width: 250px;
-            text-align: center;
-        }
-        .team-member img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            color: #e63946 ;
-        }
-        .team-member h2 {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-        .team-member p {
-            color: #457b9d;
-        }
-    </style>
-    <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -145,26 +91,24 @@
         .product-item h3 {
             margin: 15px 0;
         }
+        .brand {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+            text-align: left; /* Canh trái nội dung */
+        }
+        .brand-item {
+            flex: 1; /* Chiếm đều chiều rộng */
+            padding: 20px;
+            border-left: 1px solid #000; /* Đường kẻ bên trái */
+        }
+        .brand-item:first-child {
+            border-left: none; /* Không có đường kẻ bên trái cho cột đầu tiên */
+        }
         .brand img {
-            margin: 10px;
+            margin: 10px 0;
             height: auto; /* Để giữ nguyên tỉ lệ ảnh */
-        }
-        .brand .nike {
-            width: 100%; /* Chiều rộng 2808x986 pixel */
-            max-width: 400px;
-        }
-        .brand .adidas {
-            width: 100%; /* Chiều rộng 1545x543 pixel */
-            max-width: 300px;
-        }
-        .brand .mizuno {
-            width: 100%; /* Chiều rộng 2668x938 pixel */
-            max-width: 400px;
-        }
-        .brand-name {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
+            max-width: 90%; /* Giới hạn chiều rộng của ảnh */
         }
         footer {
             background-color: #111;
@@ -178,6 +122,16 @@
             height: auto;
             border-radius: 50%;
             margin-right: 15px;
+        }
+        .brand-name {
+            font-size: 24px; /* Kích thước chữ lớn hơn */
+            font-weight: bold; /* Chữ đậm */
+            margin-bottom: 10px; /* Khoảng cách dưới chữ thương hiệu */
+        }
+        .brand-title {
+            font-size: 30px; /* Kích thước chữ tiêu đề "Thương Hiệu" */
+            font-weight: bold; /* Chữ đậm */
+            margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
         }
     </style>
 </head>
@@ -225,39 +179,30 @@
     </div>
 
     <div class="brand">
-        <h2>Thương hiệu</h2>
+        <div class="brand-item">
+            <div class="brand-title">Thương Hiệu</div>
+            <div class="brand-name">Nike</div>
+            <img src="images/bannernike.jpg" alt="Nike">
+            <p>Nike là một thương hiệu thể thao hàng đầu, nổi tiếng với các dòng giày đá bóng chất lượng cao. Sản phẩm của Nike được thiết kế với công nghệ tiên tiến như Flyknit và ACC (All Conditions Control), giúp tăng độ chính xác và kiểm soát bóng. Nike cũng hợp tác với nhiều cầu thủ hàng đầu thế giới như Cristiano Ronaldo và Kylian Mbappé để phát triển và quảng bá giày đá bóng của mình.</p>
+        </div>
 
-        <div class="brand-name">Nike</div>
-        <img src="images/bannernike.jpg" alt="Nike" class="nike">
-        
-        <div class="brand-name">Adidas</div>
-        <img src="images/banneradidas.jpg" alt="Adidas" class="adidas">
-        
-        <div class="brand-name">Mizuno</div>
-        <img src="images/bannermizuno.jpg" alt="Mizuno" class="mizuno">
+        <div class="brand-item">
+            <div class="brand-title">Thương Hiệu</div>
+            <div class="brand-name">Adidas</div>
+            <img src="images/banneradidas.jpg" alt="Adidas">
+            <p>Adidas là một thương hiệu thể thao toàn cầu, nổi tiếng với các dòng giày đá bóng tiên tiến. Sản phẩm của Adidas thường sử dụng công nghệ như Primeknit và Boost, mang lại sự thoải mái và hiệu suất tối ưu trên sân. Adidas cũng hợp tác với nhiều cầu thủ danh tiếng như Lionel Messi và Paul Pogba để phát triển và quảng bá các mẫu giày đá bóng.</p>
+        </div>
+
+        <div class="brand-item">
+            <div class="brand-title">Thương Hiệu</div>
+            <div class="brand-name">Mizuno</div>
+            <img src="images/bannermizuno.jpg" alt="Mizuno">
+            <p>Mizuno là một thương hiệu thể thao Nhật Bản, nổi tiếng với các sản phẩm giày đá bóng chất lượng cao. Mizuno chú trọng đến việc tạo ra sản phẩm với chất liệu tốt nhất và thiết kế tinh tế. Thương hiệu này đã và đang được nhiều cầu thủ tin tưởng sử dụng trong các trận đấu chuyên nghiệp.</p>
+        </div>
     </div>
-    <section class="team-section">
-        <h1>BRANDS</h1>
-        <div class="team-container">
-            <div class="team-member">
-                <img src="images/bannernike.jpg" alt="Member 1">
-                <h2>NIKE</h2>
-                <p>abc</p>
-            </div>
-            <div class="team-member">
-                <img src="images/banneradidas.jpg" alt="Member 2">
-                <h2>ADIDAS</h2>
-                <p>abc</p>
-            </div>
-            <div class="team-member">
-                <img src="images/bannermizuno.jpg" alt="Member 3">
-                <h2>MIZUNO</h2>
-                <p>abc</p>
-            </div>
-            </div>
-    </section>
+
     <footer>
-        <p>© 2024 VietHoanSport. All rights reserved.<br>376 Tung Thien Vuong Street, Ward 13, District 8, Ho Chi Minh City | Tel: (+84)858838379</p>
+        <p>&copy; 2024 Viet Hoan Sport. Bản quyền thuộc về Viet Hoan Sport.</p>
     </footer>
 
 </body>
