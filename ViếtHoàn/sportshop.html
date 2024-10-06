@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viet Hoan Sport</title>
+    <style>
+        a {
+            color:#1d3557 ;
+        }
+        h1 { 
+            font-size: larger;
+            color: #1d3557;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1faee;
+        }
+        .team-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .team-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #e63946;
+        }
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+            padding: 0 20px;
+        }
+        .team-member {
+            background-color: #a8dadc;
+            border-radius: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            color: #e63946 ;
+        }
+        .team-member h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .team-member p {
+            color: #457b9d;
+        }
+    </style>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff; /* Nền trang màu trắng */
+            color: #000;
+        }
+        header {
+            background-color: #000; /* Thanh điều hướng màu đen */
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #fff; /* Chữ Viet Hoan Sport màu trắng */
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff; /* Chữ trong thanh điều hướng màu trắng */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            position: relative;
+            text-align: center;
+            margin: 50px 0;
+        }
+        .banner img {
+            width: 100%; /* Cho hình ảnh chiếm toàn bộ chiều rộng */
+            height: auto;
+        }
+        .banner-title {
+            position: absolute;
+            top: 50%; /* Đặt vị trí chữ ở giữa theo chiều dọc */
+            left: 50%; /* Đặt vị trí chữ ở giữa theo chiều ngang */
+            transform: translate(-50%, -50%); /* Dịch chuyển chữ về chính giữa */
+            color: rgba(255, 255, 255, 0.7); /* Chữ màu trắng với độ mờ (opacity) là 0.7 */
+            font-size: 48px; /* Kích thước chữ lớn */
+            background-color: rgba(0, 0, 0, 0.5); /* Nền đen mờ cho chữ */
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .order-now {
+            display: block;
+            background-color: #000; /* Nút màu đen */
+            color: #fff; /* Chữ màu trắng */
+            padding: 20px 40px;
+            margin: 20px auto;
+            text-align: center;
+            width: 300px;
+            text-decoration: none;
+            font-size: 24px; /* Làm chữ to hơn */
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .order-now:hover {
+            background-color: #444; /* Nút thay đổi màu khi hover */
+        }
+        .products, .brand {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .product-item {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+            vertical-align: top;
+        }
+        .product-item img {
+            width: 100%; /* Kích thước 2000x2000 pixel */
+            height: auto;
+            border: 1px solid #444;
+        }
+        .product-item h3 {
+            margin: 15px 0;
+        }
+        .brand img {
+            margin: 10px;
+            height: auto; /* Để giữ nguyên tỉ lệ ảnh */
+        }
+        .brand .nike {
+            width: 100%; /* Chiều rộng 2808x986 pixel */
+            max-width: 400px;
+        }
+        .brand .adidas {
+            width: 100%; /* Chiều rộng 1545x543 pixel */
+            max-width: 300px;
+        }
+        .brand .mizuno {
+            width: 100%; /* Chiều rộng 2668x938 pixel */
+            max-width: 400px;
+        }
+        .brand-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            color: #fff; /* Chữ ở footer màu trắng */
+        }
+        .avatar {
+            width: 100%; /* Kích thước 1365x1921 pixel */
+            max-width: 80px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <img src="images/avt.jpg" alt="Avatar" class="avatar">
+            <h1>Viet Hoan Sport</h1>
+        </div>
+        <nav>
+            <a href="#">Trang Chủ</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="https://www.facebook.com/nguyenviet.hoan.505" target="_blank">Liên hệ</a>
+            <a href="https://forms.gle/BNkB4BeQqYfakvQY9" target="_blank">Đặt Hàng</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="images/banner.jpg" alt="Banner Giày">
+        <h1 class="banner-title">Viet Hoan Sport</h1>
+        <a href="https://forms.gle/BNkB4BeQqYfakvQY9" class="order-now" target="_blank">Đặt hàng ngay</a>
+    </div>
+
+    <div id="products" class="products">
+        <h2>Sản phẩm nổi bật</h2>
+
+        <div class="product-item">
+            <img src="images/adidas.jpg" alt="Adidas F50">
+            <h3>GIÀY BÓNG ĐÁ ADIDAS F50 PRO ELITE TF</h3>
+            <p>Mẫu giày là phiên bản cao cấp dành riêng cho sân bóng 5-7 người. Phối màu dành cho những cầu thủ đam mê tốc độ, ưa sự nổi bật trên sân bóng.</p>
+        </div>
+
+        <div class="product-item">
+            <img src="images/nike.jpg" alt="Nike Mercurial">
+            <h3>GIÀY BÓNG ĐÁ NIKE AIR ZOOM MERCURIAL VAPOR 16 PRO TF</h3>
+            <p>Mẫu giày được khoác lên mình màu "Glacier Blue/Blue Orbit", với gam xanh nhạt làm nền và điểm nhấn là gam xanh đậm trên logo Swoosh.</p>
+        </div>
+
+        <div class="product-item">
+            <img src="images/mizuno.jpg" alt="Mizuno Morelia">
+            <h3>GIÀY ĐÁ BÓNG MIZUNO MORELIA NEO IV PRO TF</h3>
+            <p>Mẫu giày này được các cầu thủ đánh giá rất cao vì sự toàn diện, bền bỉ và hỗ trợ các cầu thủ rất tốt.</p>
+        </div>
+    </div>
+
+    <div class="brand">
+        <h2>Thương hiệu</h2>
+
+        <div class="brand-name">Nike</div>
+        <img src="images/bannernike.jpg" alt="Nike" class="nike">
+        
+        <div class="brand-name">Adidas</div>
+        <img src="images/banneradidas.jpg" alt="Adidas" class="adidas">
+        
+        <div class="brand-name">Mizuno</div>
+        <img src="images/bannermizuno.jpg" alt="Mizuno" class="mizuno">
+    </div>
+    <section class="team-section">
+        <h1>BRANDS</h1>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/bannernike.jpg" alt="Member 1">
+                <h2>NIKE</h2>
+                <p>abc</p>
+            </div>
+            <div class="team-member">
+                <img src="images/banneradidas.jpg" alt="Member 2">
+                <h2>ADIDAS</h2>
+                <p>abc</p>
+            </div>
+            <div class="team-member">
+                <img src="images/bannermizuno.jpg" alt="Member 3">
+                <h2>MIZUNO</h2>
+                <p>abc</p>
+            </div>
+            </div>
+    </section>
+    <footer>
+        <p>© 2024 VietHoanSport. All rights reserved.<br>376 Tung Thien Vuong Street, Ward 13, District 8, Ho Chi Minh City | Tel: (+84)858838379</p>
+    </footer>
+
+</body>
+</html>
